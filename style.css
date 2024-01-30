@@ -1,0 +1,153 @@
+
+/* colori personalizzati */
+:root{
+    --main: #696d7d;
+    --myblue: rgb(10, 147, 150);
+    --myred: rgb(174, 32, 18);
+}   
+
+/* font personalizzati */
+@font-face {
+    font-family: OnePiecefont;
+    src: url(./media/OnePiece-zAqL.ttf);
+}
+
+@font-face {
+    font-family: Superfont ;
+    src: url(./media/HyperSuperRegular.ttf);
+}
+
+
+.imgcustom{
+    width: 300px;
+    height: 100px;
+}
+
+/* nav */
+.navbar{
+    font-family: Superfont;
+    font-size: xx-large;
+    background-color: var(--myblue);
+    box-shadow: 3px 3px 0px 3px rgba(73,54,195,0.75);
+    -webkit-box-shadow: 3px 3px 0px 3px rgba(73,54,195,0.75);
+    -moz-box-shadow: 3px 3px 0px 3px rgba(73,54,195,0.75);
+    
+}
+
+.nav-link{
+    background-color: transparent;
+    color: var(--myred);
+}
+
+.form-control {
+    color: var(--main);
+    background-color: var(--myblue);
+    border: var(--bs-border-width) solid var(--myred);
+    border-radius: var(--bs-border-radius);
+}
+
+.btn-outline-success {
+    --bs-btn-color: #d20808;
+    --bs-btn-border-color: #198754;
+    --bs-btn-hover-color: #d7e2db;
+    --bs-btn-active-color: #097292;
+    
+}
+
+.h-custom{
+    height: calc(100vh - 116px);
+}
+
+.header-custom{
+    background: linear-gradient(rgba(0, 0, 0, 0.441),rgba(0, 0, 0, 0.441)) , url(./media/wp11456588.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.h1custom{
+    font-family: OnePiecefont;
+    font-size: 80px;
+    color: var(--myblue);
+    text-shadow: 0px 0px 40px black;
+}
+
+/* mediaqueries */
+@media screen and (max-width:600px) {
+    .h1custom{
+        font-family: OnePiecefont;
+        font-size: 40px;
+        color: var(--myblue);
+    }
+    .header-custom{
+        background: linear-gradient(rgba(0, 0, 0, 0.441),rgba(0, 0, 0, 0.441)) , url(./media/wp11456588.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        
+    }
+
+
+}
+
+.myborder{
+    width: fit-content;
+    border-top: 10px solid var(--myred);
+    border-bottom: 10px solid var(--myred);
+}
+
+h5,h2{
+    font-family: Superfont;
+    font-size: 40px;
+    
+}
+
+p{
+    font-family: Superfont;
+    font-size: larger;
+    color: var(--myred);
+}
+
+/* sezione card */
+.card{
+    background-color: rgb(9, 192, 9);
+    border: 2px solid var(--myred);
+    overflow: hidden;
+    
+}
+
+.imagecard{
+    height: 374px;
+    
+}
+
+.card-hover{
+    transform: scale(1.1);
+    transition: 0.4s;
+    
+}
+
+.bgsection{
+    background: linear-gradient(rgba(0, 0, 0, 0.441),rgba(0, 0, 0, 0.441)) , url(./media/436c7611f8bc2ecad6340fb98f19d051.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.h2custom{
+    font-family: Superfont;
+    color: var(--myred);
+    font-size: 50px;
+}
+
+/* sezione carosello */
+.carouselheight{
+    height: 500px;
+}
+
+.bg-blur{
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    min-height: 80%;
+}
